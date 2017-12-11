@@ -1,23 +1,15 @@
 <?php
 
 /**
- * Plugin Name:     Vue WordPress Plugin
- * Description:     A starting point for using VueJS in WordPress plugins. This is designed to be hacked and changed.
+ * Plugin Name:     Werbepack Vue Plugin
+ * Description:     Shows "Massnahmen" and lets users pick them.
  * Version: 0.0.3
- * License: GPL2+
- * Author: Mat Gargano
- * Author URI: http://matgargano.com
- *
- * This plugin is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with CSSTidy; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ * Author: Johannes Eifert
+ * Author URI: octotreat.ch
  *
  */
+
+require_once("vwp/enqueues.php");
 
 use VWP\Enqueues;
 

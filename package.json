@@ -1,5 +1,5 @@
 {
-  "name": "vue-wordpress-plugin",
+  "name": "werbepack-vue",
   "version": "0.0.3",
   "description": "A starting point for using VueJS in WordPress plugins. This is designed to be hacked and changed.",
   "dependencies": {

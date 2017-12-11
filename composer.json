@@ -1,5 +1,5 @@
 {
-  "name": "matgargano/vue-wordpress-plugin",
+  "name": "werbepack-vue",
   "description": "A starting point for using VueJS in WordPress plugins. This is designed to be hacked and changed.",
   "homepage": "http://matgargano.com/",
   "type": "wordpress-plugin",
