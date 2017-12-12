@@ -7,16 +7,12 @@
 </template>
 
 <script>
-
 export default {
-  methods: {
-  },
+  methods: {},
   data: function() {
-    return {
-    }
+    return {}
   },
-  components: {
-  }
+  components: {}
 }
 </script>
 
@@ -27,8 +23,39 @@ export default {
 }
 
 .fade-enter,
-.fade-leave-to
-{
+.fade-leave-to {
   opacity: 0
+}
+
+/* Theme was overriding this stuff */
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn i {
+  color: inherit;
+}
+
+.btn-default {
+  border-color: #adadad;
+}
+
+.btn-info {
+  background-color: rgba(91, 0, 107, 0.7);
+}
+.btn-info:hover {
+  background-color: #604594;
+  border-color: rgba(91, 0, 107, 0.7);
+}
+.btn-primary:hover{
+  background-color: #604594;
+  color: white;
+}
+.btn-primary {
+  background-color: white;
+  border-color: #604594;
+  color: black;
 }
 </style>
