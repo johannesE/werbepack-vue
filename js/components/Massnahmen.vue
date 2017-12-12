@@ -2,7 +2,7 @@
 <massnahme v-if="massnahmeSelected" v-bind:massnahme="massnahme" v-on:back="listMassnahmen()" v-on:toggleMassnahme="toggleMassnahme()"></massnahme>
 <div v-else-if="!massnahmeSelected" class="container-fluid container-flex">
   <div v-for="massnahme in massnahmen" class="massnahme">
-    <img :src="'/content/uploads/2017/11/' + massnahme.src" />
+    <img :src="'/wp-content/uploads/2017/11/' + massnahme.src" />
     <h2>{{ massnahme.title }}</h2>
     <div class="btn btn-block btn-lg btn-info" v-on:click="selectMassnahme(massnahme)"><i class="fa fa-info-circle" aria-hidden="true"/>Details</div>
     <div class="btn btn-info btn-block" v-on:click="toggleMassnahme(massnahme)" v-if="!massnahme.selected"><i class="fa fa-square-o" aria-hidden="true"></i>Auswählen</div>
