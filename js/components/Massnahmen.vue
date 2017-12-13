@@ -5,19 +5,24 @@
     <div v-for="massnahme in massnahmen" class="massnahme">
       <img :src="'/wp-content/uploads/2017/11/' + massnahme.src" />
       <h2>{{ massnahme.title }}</h2>
-      <div class="btn btn-block btn-lg btn-info" v-on:click="selectMassnahme(massnahme)"><i class="fa fa-info-circle" aria-hidden="true" />Details</div>
-      <div class="btn btn-info btn-block" v-on:click="toggleMassnahme(massnahme)" v-if="!massnahme.selected"><i class="fa fa-square-o" aria-hidden="true"></i>Auswählen</div>
-      <div class="btn btn-primary btn-block" v-on:click="toggleMassnahme(massnahme)" v-if="massnahme.selected"><i class="fa fa-check-square-o" aria-hidden="true"></i>Ausgewählt</div>
+      <div class="btn btn-block btn-lg btn-info" v-on:click="selectMassnahme(massnahme)" :id="'details' + massnahme.title"><i class="fa fa-info-circle" aria-hidden="true"/>Details</div>
+      <div class="btn btn-info btn-block" v-on:click="toggleMassnahme(massnahme)" v-if="!massnahme.selected" :id="'select' + massnahme.title"><i class="fa fa-square-o" aria-hidden="true"></i>Auswählen</div>
+      <div class="btn btn-primary btn-block" v-on:click="toggleMassnahme(massnahme)" v-if="massnahme.selected" :id="'deselect' + massnahme.title"><i class="fa fa-check-square-o" aria-hidden="true"></i>Ausgewählt</div>
     </div>
   </div>
+  <contact v-bind:massnahmen="massnahmen"></contact>
+
 </div>
 </template>
 
 <script>
 import Massnahme from './Massnahme.vue'
+import Contact from './Contact.vue'
+
 export default {
   components: {
-    'massnahme': Massnahme
+    'massnahme': Massnahme,
+    'contact': Contact,
   },
   methods: {
     selectMassnahme: function(massnahme) {
@@ -84,7 +89,7 @@ export default {
           src: 'visual.png'
         },
         {
-          title: "Social Media",
+          title: "Social Media online-Kampagne",
           kreation: 'Du produzierst eigene Inhalte. Dafür legen wir Dir den Grundstein fest mit einem Konzept und einer Content Marketing Strategie. Wir setzen Deine Social Media Kanäle auf und laden die ersten hochwertigen Visuals hoch. Bei Bedarf mit Hilfe eines Content-Redaktionssystem.',
           produktion: 'Eröffnung/Optimierung der Social Media Kanäle: Facebook, Google+, Erarbeitung Content Strategie inkl. Redaktionsplan und ersten Postings. Wenn sinnvoll, Aufsetzen eines Redaktions-Systems, welches ein teamübergreifendes, automatisiertes Posting ermöglicht. Folgekosten Redaktions-System ab CHF 250.-/Monat bei eigener Abwicklung. Bei Posting-Erstellung durch uns CHF 800.-/Monat.',
           src: 'social.png'
