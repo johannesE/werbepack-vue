@@ -1,24 +1,26 @@
 <template>
-<div class="container">
-  <div class="row">
-    <div class="col-xs-3">
-      <img :src="'/wp-content/uploads/2017/11/' + massnahme.src"/>
-      <div class="btn btn-block" v-on:click="goBack()">Zurück</div>
-      <div class="btn btn-info btn-block" v-on:click="toggleMassnahme()" v-if="!massnahme.selected"><i class="fa fa-square-o" aria-hidden="true"></i>Auswählen</div>
-      <div class="btn btn-primary btn-block" v-on:click="toggleMassnahme()" v-if="massnahme.selected"><i class="fa fa-check-square-o" aria-hidden="true"></i>Ausgewählt</div>
-    </div>
+<div id="wrapper">
 
-    <div class="col-xs-9">
-      <h1>{{massnahme.title}}</h1>
-      <div class="container-flex"
-        <p class="hyphencle" style="text-align: justify;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3">
+        <img :src="'/wp-content/uploads/2017/11/' + massnahme.src" />
+        <div class="btn btn-block" v-on:click="goBack()">Zurück</div>
+        <div class="btn btn-info btn-block" v-on:click="toggleMassnahme()" v-if="!massnahme.selected"><i class="fa fa-square-o" aria-hidden="true"></i>Auswählen</div>
+        <div class="btn btn-primary btn-block" v-on:click="toggleMassnahme()" v-if="massnahme.selected"><i class="fa fa-check-square-o" aria-hidden="true"></i>Ausgewählt</div>
+      </div>
+
+      <div class="col-xs-9">
+        <h1>{{massnahme.title}}</h1>
+        <div class="container-flex" <p class="hyphencle" style="text-align: justify;">
           <b>Kreation</b><br>
           <span v-html="massnahme.kreation" />
-        </p>
-        <p class="hyphencle" style="text-align: justify;">
-          <b>Produktion</b><br>
-          <span v-html="massnahme.produktion" />
-        </p>
+          </p>
+          <p class="hyphencle" style="text-align: justify;">
+            <b>Produktion</b><br>
+            <span v-html="massnahme.produktion" />
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -29,13 +31,13 @@
 export default {
   props: ['massnahme'],
   methods: {
-      goBack: function () {
-        this.$emit('back')
-      },
-      toggleMassnahme: function () {
-        this.$emit('toggleMassnahme');
-      },
+    goBack: function() {
+      this.$emit('back')
     },
+    toggleMassnahme: function() {
+      this.$emit('toggleMassnahme');
+    },
+  },
   data: function() {
     return {
 

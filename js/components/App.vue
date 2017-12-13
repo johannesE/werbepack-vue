@@ -1,8 +1,10 @@
 <template>
-<div id="massnahmen-app">
-  <transition name="fade" appear mode="out-in">
-    <router-view/>
-  </transition>
+<div id="wrapper">
+  <div id="massnahmen-app">
+    <transition name="fade" appear mode="out-in">
+      <router-view/>
+    </transition>
+  </div>
 </div>
 </template>
 
@@ -45,17 +47,23 @@ export default {
 .btn-info {
   background-color: rgba(91, 0, 107, 0.7);
 }
+
 .btn-info:hover {
   background-color: #604594;
   border-color: rgba(91, 0, 107, 0.7);
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
   background-color: #604594;
   color: white;
 }
+
 .btn-primary {
   background-color: white;
   border-color: #604594;
   color: black;
+}
+#wrapper{
+  margin: 8rem 0;
 }
 </style>
