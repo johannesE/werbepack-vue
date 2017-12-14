@@ -24,6 +24,12 @@ const routes = [{
 ]
 
 Vue.use(VueRouter)
+Vue.filter('format_id', function (value) {
+  return (value || value === 0)
+     ? value.toString().toLowerCase().replace(/ /g,'')
+     : ''
+})
+
 
 const router = new VueRouter({
   routes: routes,
