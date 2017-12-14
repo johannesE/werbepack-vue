@@ -6,8 +6,12 @@
       <div class="col-xs-3">
         <img :src="'/wp-content/uploads/2017/11/' + massnahme.src" />
         <div class="btn btn-block" v-on:click="goBack()">Zurück</div>
-        <div class="btn btn-info btn-block" v-on:click="toggleMassnahme()" v-if="!massnahme.selected"><i class="fa fa-square-o" aria-hidden="true" :id="'select' + massnahme.title | format_id"></i>Auswählen</div>
-        <div class="btn btn-primary btn-block" v-on:click="toggleMassnahme()" v-if="massnahme.selected" :id="'deselect' + massnahme.title | format_id"><i class="fa fa-check-square-o" aria-hidden="true"></i>Ausgewählt</div>
+        <div class="btn btn-info btn-block" v-on:click="toggleMassnahme()" v-if="!massnahme.selected" :id="'select' + massnahme.title | format_id">
+          <i class="fa fa-square-o" aria-hidden="true"></i>Auswählen
+        </div>
+        <div class="btn btn-primary btn-block" v-on:click="toggleMassnahme()" v-if="massnahme.selected" :id="'deselect' + massnahme.title | format_id">
+          <i class="fa fa-check-square-o" aria-hidden="true"></i>Ausgewählt
+        </div>
       </div>
 
       <div class="col-xs-9">
