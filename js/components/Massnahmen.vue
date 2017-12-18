@@ -89,8 +89,8 @@ export default {
           src: 'visual.png'
         },
         {
-          title: "Social Media online-Kampagne",
-          kreation: 'Du produzierst eigene Inhalte. Dafür legen wir Dir den Grundstein fest mit einem Konzept und einer Content Marketing Strategie. Wir setzen Deine Social Media Kanäle auf und laden die ersten hochwertigen Visuals hoch. Bei Bedarf mit Hilfe eines Content-Redaktionssystem.',
+          title: "Social Media",
+          kreation: 'Du produzierst eigene Inhalte für deine Social Media Kampagne. Dafür legen wir Dir den Grundstein fest mit einem Konzept und einer Content Marketing Strategie. Wir setzen Deine Social Media Kanäle auf und laden die ersten hochwertigen Visuals hoch. Bei Bedarf mit Hilfe eines Content-Redaktionssystem.',
           produktion: 'Eröffnung/Optimierung der Social Media Kanäle: Facebook, Google+, Erarbeitung Content Strategie inkl. Redaktionsplan und ersten Postings. Wenn sinnvoll, Aufsetzen eines Redaktions-Systems, welches ein teamübergreifendes, automatisiertes Posting ermöglicht. Folgekosten Redaktions-System ab CHF 250.-/Monat bei eigener Abwicklung. Bei Posting-Erstellung durch uns CHF 800.-/Monat.',
           src: 'social.png'
         },

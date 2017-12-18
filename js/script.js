@@ -5,40 +5,35 @@ import App from './components/App.vue'
 import IsNotStartup from './components/IsNotStartup.vue'
 import Massnahmen from './components/Massnahmen.vue'
 import Massnahme from './components/Massnahme.vue'
-import NewUser from './components/NewUser.vue'
 
-const routes = [{
-    path: '/kein-startup',
-    component: IsNotStartup,
-    name: 'kein-startup'
-  },
+const routes = [
   {
     path: '/',
-    component: NewUser
+    redirect: '/massnahmen'
   },
   {
-    path: '/startup-massnahmen',
+    path: '/massnahmen',
     component: Massnahmen,
-    name: 'startup-massnahmen',
+    name: 'massnahmen',
   },
-]
+];
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 Vue.filter('format_id', function (value) {
   return (value || value === 0)
-     ? value.toString().toLowerCase().replace(/ /g,'')
-     : ''
-})
+    ? value.toString().toLowerCase().replace(/ /g, '')
+    : ''
+});
 
 
 const router = new VueRouter({
   routes: routes,
-})
+});
 
-window.onload = function() {
+window.onload = function () {
   const massnahmenApp = new Vue({
     router: router,
     render: h => h(App),
     el: ('#massnahmen-app')
   })
-}
+};
