@@ -9,10 +9,6 @@ import Massnahme from './components/Massnahme.vue'
 const routes = [
   {
     path: '/',
-    redirect: '/massnahmen'
-  },
-  {
-    path: '/massnahmen',
     component: Massnahmen,
     name: 'massnahmen',
   },

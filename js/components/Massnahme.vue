@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-3">
-        <img :src="'/wp-content/uploads/2017/11/' + massnahme.src" />
+        <img :src="massnahme.src" />
         <div class="btn btn-block" v-on:click="goBack()">Zurück</div>
         <div class="btn btn-info btn-block" v-on:click="toggleMassnahme()" v-if="!massnahme.selected" :id="'select' + massnahme.title | format_id">
           <i class="fa fa-square-o" aria-hidden="true"></i>Auswählen
