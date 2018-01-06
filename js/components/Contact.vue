@@ -1,5 +1,5 @@
 <template>
-  <div id="wrapper">
+  <div id="contact-wrapper">
     <div class="container">
       <h2>Kontakt | Bestellung</h2>
       <p>Du musst nicht alle Felder ausfüllen, nur die, mit denen wir Dich kontaktieren können. Wir empfehlen das Telefon. Das geht am schnellsten.</p>
@@ -62,7 +62,13 @@
   input.gotcha{
     display: none;
   }
+  input, textarea{
+    border-radius: 0 !important;
+  }
   textarea{
-    height: 165px;
+    height: 125px;
+  }
+  #contact-wrapper{
+    margin-top: 5rem;
   }
 </style>

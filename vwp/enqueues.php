@@ -13,9 +13,8 @@ class Enqueues {
 	}
 
 	public function enqueue() {
-
 		wp_enqueue_script( 'VWP', plugin_dir_url( dirname( __FILE__ ) ) . 'dist/js/bundle.js' );
-
-	}
+//        wp_enqueue_style('fontawesome', plugins_url('style/fontawesome-min.css',__FILE__ ));
+    }
 
 }

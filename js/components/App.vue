@@ -63,9 +63,6 @@ export default {
   border-color: #604594;
   color: black;
 }
-#wrapper{
-  margin: 8rem 0;
-}
 h1, h2, h3, h4, h5, h6, .btn{
   text-transform: none;
 }
