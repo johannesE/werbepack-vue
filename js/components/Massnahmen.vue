@@ -48,12 +48,12 @@ export default {
       },
       massnahmen: [{
           title: "Logo",
-          kreation: 'Ein <strong>bärenstarker Auftritt</strong> bedingt ein starkes Logo. Mit Rücksicht auf die Gesetze der Formsprache und Farbpsychologie kreieren wir ein Logo, welches Ihre Firma repräsentiert.',
-          produktion: 'Sie erhalten Ihr Logo oder Ihre Icons als <strong>skalierbare Vektorengrafik</strong> (svg) in allen gängigen Farbmodellen und als schwarz-weisse Version. Auch die Ablieferung von pixelorientierten Formaten für Web und Social Media Anwendungen ist inklusive.',
+          kreation: 'Ein <strong>bärenstarker Auftritt</strong> bedingt ein starkes Logo. Mit Rücksicht auf die Gesetze der Formsprache und Farbpsychologie kreieren wir ein Logo, welches Deine Firma repräsentiert.',
+          produktion: 'Du erhältst Dein Logo oder Deine Icons als <strong>skalierbare Vektorengrafik</strong> (svg) in allen gängigen Farbmodellen und als schwarz-weisse Version. Auch die Ablieferung von pixelorientierten Formaten für Web und Social Media Anwendungen ist inklusive.',
           src: 'http://werbepack.ch/wp-content/uploads/2017/11/ihrlogo.png'
         },
         {
-          title: "Uniformen",
+          title: "Bekleidung",
           kreation: 'Vermittle ein harmonisches Gesamtbild Deiner Firma mit einheitlicher Kleidung. Als Zeichen des gelebten Gemeinschaftsgefühls steigerst Du die Motivation Deiner Mitarbeiter und begeisterst Geschäftspartner und Kunden. Wir veredeln T-Shirts und Poloshirts, Caps, Hemden und Blusen mit direktem Druck oder mit hochwertiger Stickerei. Je nach Branche auch berufsspezifische Arbeitskleider bestehend aus Hose, Oberteil und Jacke.',
           produktion: 'Je nach Textil und Veredelungsart hast Du die Wahl zwischen Druck: 20 „T-Shirts beidseitig bedruckt“ oder 15 „Poloshirts beidseitig bedruck“. Oder Stickerei: 15 „Caps vorne bestickt“ oder 8 „Hemden/Blusen bestickt“. Je nach Branche kannst Du stattessen zwei „Komplet-Berufskleider bestickt“ (Oberteil und Jacke bestickt inkl. passende Hose) wählen. Farbe, Grösse und Ausführung der einzelnen Textilien aus unserem Katalog nach Wahl. Stickerei an max. 2 Positionen pro Textil (ausser bei Caps). Die Digitalisierung der Stickdaten ist inkludiert.',
           src: 'http://werbepack.ch/wp-content/uploads/2017/11/bekleidung.png'
@@ -137,16 +137,8 @@ export default {
   img {
     margin-bottom: 0;
   }
-  img.border{
-    border: 1px solid rgba(91, 0, 107, 0.7);
-    border-bottom: none;
-  }
 
   h2 {
     text-align: center;
-  }
-  h2.border{
-    border-left: 1px solid rgba(91, 0, 107, 0.7);
-    border-right: 1px solid rgba(91, 0, 107, 0.7);
   }
 </style>
