@@ -89,7 +89,7 @@ export default {
           src: 'http://werbepack.ch/wp-content/uploads/2017/11/visual.png'
         },
         {
-          title: "Social Media",
+          title: "Online Marketing",
           kreation: 'Du produzierst eigene Inhalte für deine Social Media Kampagne. Dafür legen wir Dir den Grundstein fest mit einem Konzept und einer Content Marketing Strategie. Wir setzen Deine Social Media Kanäle auf und laden die ersten hochwertigen Visuals hoch. Bei Bedarf mit Hilfe eines Content-Redaktionssystem.',
           produktion: 'Eröffnung/Optimierung der Social Media Kanäle: Facebook, Google+, Erarbeitung Content Strategie inkl. Redaktionsplan und ersten Postings. Wenn sinnvoll, Aufsetzen eines Redaktions-Systems, welches ein teamübergreifendes, automatisiertes Posting ermöglicht. Folgekosten Redaktions-System ab CHF 250.-/Monat bei eigener Abwicklung. Bei Posting-Erstellung durch uns CHF 800.-/Monat.',
           src: 'http://werbepack.ch/wp-content/uploads/2017/11/social.png'

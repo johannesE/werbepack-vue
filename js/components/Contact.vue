@@ -22,7 +22,7 @@
         <div class="row">
           <div class="col-xs-12">
             <input type="submit" class="btn btn-default btn-block" value="Unverbindlich anfragen" :disabled="errors.any() || !isCompleted"/>
-            <span class="error" v-show="!isCompleted">Wir benötigen entweder eine Telefonnummer, oder eine Email Adresse um Sie zu kontaktieren.</span>
+            <span class="error" v-show="!isCompleted">Wir benötigen entweder eine Telefonnummer oder eine Email Adresse um Dich zu kontaktieren.</span>
           </div>
         </div>
       </form>
