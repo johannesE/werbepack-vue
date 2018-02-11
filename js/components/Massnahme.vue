@@ -8,12 +8,12 @@
             <div class="dashicons dashicons-arrow-left-alt"></div>
             Zurück
           </div>
-          <div class="btn btn-info btn-block" v-on:click="toggleMassnahme()" v-if="!massnahme.selected"
+          <div class="btn btn-info btn-block" v-on:click="toggleMassnahme(massnahme)" v-if="!massnahme.selected"
                :id="'select' + massnahme.title | format_id">
             <div class="dashicons dashicons-star-empty"></div>
             Auswählen
           </div>
-          <div class="btn btn-primary btn-block btn-outline" v-on:click="toggleMassnahme()" v-if="massnahme.selected"
+          <div class="btn btn-primary btn-block btn-outline" v-on:click="toggleMassnahme(massnahme)" v-if="massnahme.selected"
                :id="'deselect' + massnahme.title | format_id">
             <div class="dashicons dashicons-star-filled"></div>
             Ausgewählt
@@ -41,20 +41,18 @@
 
 <script>
 export default {
-  props: ['massnahme'],
   methods: {
     goBack: function() {
-      this.$emit('back')
+      this.$router.push("/")
     },
-    toggleMassnahme: function() {
-      this.$emit('toggleMassnahme');
+    toggleMassnahme: function(massnahme) {
+      this.$store.commit('toggleMassnahme', massnahme)
     },
   },
-  data: function() {
-    return {
-
-    }
-  },
+  computed: {
+    massnahmen(){ return this.$store.state.massnahmen },
+    massnahme(){ return this.$store.state.massnahmen.filter(function(x) {return x.title === this.$route.params.title}.bind(this))[0] }
+  }
 }
 </script>
 
