@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name:     Werbepack Vue Plugin
- * Description:     Shows "Massnahmen" and lets users pick them.
+ * Description:     Shows Massnahmen and lets users pick them.
  * Version: 0.0.3
  * Author: Johannes Eifert
  * Author URI: octotreat.ch

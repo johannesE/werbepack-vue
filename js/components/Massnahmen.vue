@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     selectMassnahme: function(massnahme) {
-      this.$router.push({path: massnahme.title})
+      this.$router.push({path: '/massnahmen/' + massnahme.title})
     },
     toggleMassnahme: function(massnahme) {
       this.$store.commit('toggleMassnahme', massnahme)

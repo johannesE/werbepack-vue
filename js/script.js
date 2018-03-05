@@ -9,12 +9,12 @@ import de from 'vee-validate/dist/locale/de';
 
 const routes = [
     {
-      path: '/',
+      path: '/massnahmen',
       component: Massnahmen,
       name: 'massnahmen',
     },
     {
-      path: '/:title',
+      path: '/massnahmen/:title',
       component: Massnahme
     },
   ]
@@ -30,6 +30,7 @@ Vue.filter('format_id', function (value) {
 
 const router = new VueRouter({
   routes: routes,
+  mode: 'history',
 });
 
 // Localize takes the locale object as the second argument (optional) and merges it.

@@ -43,7 +43,7 @@
 export default {
   methods: {
     goBack: function() {
-      this.$router.push("/")
+      this.$router.push("/massnahmen")
     },
     toggleMassnahme: function(massnahme) {
       this.$store.commit('toggleMassnahme', massnahme)
