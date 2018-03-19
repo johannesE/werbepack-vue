@@ -2,7 +2,7 @@
   <div id="contact-wrapper">
     <div class="container">
       <h2>Kontakt | Bestellung</h2>
-      <p>Du musst nicht alle Felder ausfüllen, nur die, mit denen wir Dich kontaktieren können. Wir empfehlen das Telefon. Das geht am schnellsten.</p>
+      <p>Fülle einfach die Felder aus, mit denen wir dich kontaktieren dürfen. Wir empfehlen das Telefon. Das ist persönlicher und geht am schnellsten.</p>
       <form method="POST" action="https://formspree.io/info@werbepack.ch">
         <div class="row">
           <div class="col-xs-12 col-sm-6">
@@ -21,7 +21,7 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <input type="submit" class="btn btn-default btn-block" value="Unverbindlich anfragen" :disabled="errors.any() || !isCompleted"/>
+            <input type="submit" class="btn btn-default btn-block" value="Jetzt unverbindlich anfragen" :disabled="errors.any() || !isCompleted"/>
             <span class="error" v-show="!isCompleted">Wir benötigen entweder eine Telefonnummer oder eine Email Adresse um Dich zu kontaktieren.</span>
           </div>
         </div>
